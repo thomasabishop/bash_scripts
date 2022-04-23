@@ -2,7 +2,7 @@
 
 # If file changes exist in Obsidian directory, automate commit
 
-OBSIDIAN_PATH="${HOME}/Learning/Computer Science"
+OBSIDIAN_PATH="${HOME}/repos/computer-science"
 
 cd "$OBSIDIAN_PATH"
 git pull
