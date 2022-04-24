@@ -1,10 +1,9 @@
 #!/bin/bash
+# If file changes exist in notetakeing directory, automate commit
 
-# If file changes exist in Obsidian directory, automate commit
+NOTES_PATH="${HOME}/repos/computer-science"
 
-OBSIDIAN_PATH="${HOME}/repos/computer-science"
-
-cd "$OBSIDIAN_PATH"
+cd "$NOTES_PATH"
 git pull
 CHANGES_EXIST="$(git status --porcelain | wc -l)"
 
