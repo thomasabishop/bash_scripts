@@ -2,12 +2,11 @@
 
 # Convert spaces in file and directory names to underscore
 
-LOG_DIR="${HOME}/bash_scripts/fake/.logs/"
+LOG_DIR="${HOME}/repos/computer-science/.logs/"
 
 main() {
     find . -depth -name '* *' | while read fname; do
         new_fname=$(echo $fname | tr " " "_")
-
         if [ -e $new_fname ]; then
             echo "File $new_fname already exists. Not replacing $fname"
         else
