@@ -2,8 +2,6 @@
 
 # Convert spaces in file and directory names to underscore
 
-LOG_DIR="${HOME}/repos/computer-science/.logs/"
-
 main() {
     find . -depth -name '* *' | while read fname; do
         new_fname=$(echo $fname | tr " " "_")
@@ -19,4 +17,4 @@ main() {
 # Run and pipe errors and feedback to logfile
 
 &>/dev/null
-main >"${LOG_DIR}fnames_log.txt" 2>&1
+main

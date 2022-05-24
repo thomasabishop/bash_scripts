@@ -1,8 +1,8 @@
 #!/bin/bash
 # If file changes exist in notetakeing directory, automate commit
 
-NOTES_PATH="${HOME}/repos/computer-science"
-SPACE_2_UNDRSCR="${HOME}/bash_scripts/space-to-underscore-filename.sh"
+NOTES_PATH="${HOME}/computer_science"
+SPACE_2_UNDRSCR="${HOME}/bash_scripts/space_to_underscore_filename.sh"
 
 # Remove spaces from file names
 cd "$NOTES_PATH"
